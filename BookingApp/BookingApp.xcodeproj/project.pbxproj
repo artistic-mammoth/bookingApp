@@ -11,6 +11,15 @@
 		C728AB042B36F68800D8037B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C728AB032B36F68800D8037B /* ContentView.swift */; };
 		C728AB062B36F68900D8037B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C728AB052B36F68900D8037B /* Assets.xcassets */; };
 		C728AB092B36F68900D8037B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C728AB082B36F68900D8037B /* Preview Assets.xcassets */; };
+		C728AB192B36F9BC00D8037B /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C728AB182B36F9BC00D8037B /* HTTPMethod.swift */; };
+		C728AB1C2B36FA1E00D8037B /* EndpointComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C728AB1B2B36FA1E00D8037B /* EndpointComponent.swift */; };
+		C728AB1E2B36FA4500D8037B /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C728AB1D2B36FA4500D8037B /* NetworkRequest.swift */; };
+		C728AB202B36FAB000D8037B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C728AB1F2B36FAB000D8037B /* NetworkClient.swift */; };
+		C728AB222B36FAF500D8037B /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C728AB212B36FAF500D8037B /* NetworkingError.swift */; };
+		C728AB242B36FB5B00D8037B /* BookingEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C728AB232B36FB5B00D8037B /* BookingEndpoints.swift */; };
+		C728AB272B36FBE000D8037B /* HotelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C728AB262B36FBE000D8037B /* HotelResponse.swift */; };
+		C728AB292B36FC0000D8037B /* HotelRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C728AB282B36FC0000D8037B /* HotelRequest.swift */; };
+		C728AB2B2B36FC2B00D8037B /* NetworkClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C728AB2A2B36FC2B00D8037B /* NetworkClientImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		C728AB032B36F68800D8037B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C728AB052B36F68900D8037B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C728AB082B36F68900D8037B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C728AB182B36F9BC00D8037B /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		C728AB1B2B36FA1E00D8037B /* EndpointComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointComponent.swift; sourceTree = "<group>"; };
+		C728AB1D2B36FA4500D8037B /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		C728AB1F2B36FAB000D8037B /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		C728AB212B36FAF500D8037B /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		C728AB232B36FB5B00D8037B /* BookingEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingEndpoints.swift; sourceTree = "<group>"; };
+		C728AB262B36FBE000D8037B /* HotelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelResponse.swift; sourceTree = "<group>"; };
+		C728AB282B36FC0000D8037B /* HotelRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelRequest.swift; sourceTree = "<group>"; };
+		C728AB2A2B36FC2B00D8037B /* NetworkClientImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +69,11 @@
 		C728AB002B36F68800D8037B /* BookingApp */ = {
 			isa = PBXGroup;
 			children = (
+				C728AB122B36F83C00D8037B /* BookingFlowModule */,
 				C728AB0F2B36F71300D8037B /* Services */,
+				C728AB172B36F91400D8037B /* Resources */,
 				C728AB012B36F68800D8037B /* BookingAppApp.swift */,
 				C728AB032B36F68800D8037B /* ContentView.swift */,
-				C728AB052B36F68900D8037B /* Assets.xcassets */,
 				C728AB072B36F68900D8037B /* Preview Content */,
 			);
 			path = BookingApp;
@@ -79,8 +98,72 @@
 		C728AB102B36F71A00D8037B /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				C728AB2A2B36FC2B00D8037B /* NetworkClientImpl.swift */,
+				C728AB1F2B36FAB000D8037B /* NetworkClient.swift */,
+				C728AB182B36F9BC00D8037B /* HTTPMethod.swift */,
+				C728AB1B2B36FA1E00D8037B /* EndpointComponent.swift */,
+				C728AB1D2B36FA4500D8037B /* NetworkRequest.swift */,
+				C728AB212B36FAF500D8037B /* NetworkingError.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		C728AB122B36F83C00D8037B /* BookingFlowModule */ = {
+			isa = PBXGroup;
+			children = (
+				C728AB162B36F8F500D8037B /* SuccessfullyPaidScreen */,
+				C728AB152B36F8A300D8037B /* BookingScreen */,
+				C728AB142B36F87E00D8037B /* RoomScreen */,
+				C728AB132B36F85A00D8037B /* HotelScreen */,
+			);
+			path = BookingFlowModule;
+			sourceTree = "<group>";
+		};
+		C728AB132B36F85A00D8037B /* HotelScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C728AB252B36FBC700D8037B /* HotelRequests */,
+			);
+			path = HotelScreen;
+			sourceTree = "<group>";
+		};
+		C728AB142B36F87E00D8037B /* RoomScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RoomScreen;
+			sourceTree = "<group>";
+		};
+		C728AB152B36F8A300D8037B /* BookingScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BookingScreen;
+			sourceTree = "<group>";
+		};
+		C728AB162B36F8F500D8037B /* SuccessfullyPaidScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SuccessfullyPaidScreen;
+			sourceTree = "<group>";
+		};
+		C728AB172B36F91400D8037B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C728AB052B36F68900D8037B /* Assets.xcassets */,
+				C728AB232B36FB5B00D8037B /* BookingEndpoints.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C728AB252B36FBC700D8037B /* HotelRequests */ = {
+			isa = PBXGroup;
+			children = (
+				C728AB262B36FBE000D8037B /* HotelResponse.swift */,
+				C728AB282B36FC0000D8037B /* HotelRequest.swift */,
+			);
+			path = HotelRequests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +238,15 @@
 			files = (
 				C728AB042B36F68800D8037B /* ContentView.swift in Sources */,
 				C728AB022B36F68800D8037B /* BookingAppApp.swift in Sources */,
+				C728AB1C2B36FA1E00D8037B /* EndpointComponent.swift in Sources */,
+				C728AB272B36FBE000D8037B /* HotelResponse.swift in Sources */,
+				C728AB292B36FC0000D8037B /* HotelRequest.swift in Sources */,
+				C728AB222B36FAF500D8037B /* NetworkingError.swift in Sources */,
+				C728AB192B36F9BC00D8037B /* HTTPMethod.swift in Sources */,
+				C728AB2B2B36FC2B00D8037B /* NetworkClientImpl.swift in Sources */,
+				C728AB1E2B36FA4500D8037B /* NetworkRequest.swift in Sources */,
+				C728AB242B36FB5B00D8037B /* BookingEndpoints.swift in Sources */,
+				C728AB202B36FAB000D8037B /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
