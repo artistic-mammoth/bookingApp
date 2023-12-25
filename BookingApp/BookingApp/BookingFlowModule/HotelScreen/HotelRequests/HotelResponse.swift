@@ -5,8 +5,6 @@
 //  Created by Михайлов Александр on 23.12.2023.
 //
 
-import Foundation
-
 struct HotelResponse: Codable {
     let id: Int
     let name, adress: String
